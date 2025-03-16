@@ -8,14 +8,23 @@ function firstElements(arr, n){
 console.log(firstElements([1, 2, 3, 4], 3));
 
 //Practice two
-function mostFrequent(arr){
-    let value;
-    for(value of arr){
-        if value 
+// maybe use 2 time looping .. 
+function findDouble(arr) {
+    let x = [];
+    let z = [];
+    
+    for (let y of arr) {
+        if (!x.includes(y)) {
+            x.push(y);
+        } else {
+            z.push(y);
+        }
     }
-
+    
+    return z;
 }
-console.log(mostFrequent([1, 2, "a", "a", 5, 15, true, "a"]))
+
+console.log(findDouble([1, 2, 3, 3, 4, "a", "a"]));
 
 //Practice Three
 function productOfArray(arr){
@@ -35,17 +44,17 @@ console.log(productOfArray([1, 3, 65]));
 
 //practice four 
 function removeNonIntegers(array) {
-    let value = [];
-    for (value of array){
-    if (typeof i != "number" && value.isInteger(i)){
-            value.push(i);
-            return value
-        }else{
-            return array
+    let x = [];
+    for (let i of array){
+        if (typeof i === "number"){
+            x.push(i);
         }
+    
+      }
+    return(x);
     }
-}
-console.log(removeNonIntegers([1, 2, 3,"a"]))
+
+console.log(removeNonIntegers([2, 1, "j",3, 10,4, "h"]));
 
 
 //practice five 
